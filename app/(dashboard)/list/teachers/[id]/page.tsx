@@ -1,4 +1,4 @@
-import BigCalendar from "@/components/BigCalender";
+
 import FormModal from "@/components/FormModal";
 import Performance from "@/components/Performance";
 import { role } from "@/lib/data";
@@ -27,7 +27,7 @@ const SingleTeacherPage = () => {
               <div className="flex items-center gap-4">
                 <h1 className="text-xl font-semibold">Leonard Snyder</h1>
                 {role === "admin" && <FormModal
-                  table="teacher"
+                  table="student"
                   type="update"
                   data={{
                     id: 1,
@@ -131,7 +131,6 @@ const SingleTeacherPage = () => {
         {/* BOTTOM */}
         <div className="mt-4 bg-white rounded-md p-4 h-[800px]">
           <h1>Teacher&apos;s Schedule</h1>
-          <BigCalendar />
         </div>
       </div>
       {/* RIGHT */}
