@@ -39,8 +39,8 @@ const SubjectListPage = () => {
         <div className="flex items-center gap-2">
           {role === "admin" && (
             <>
-              <FormModal table="subject" type="update" data={item} />
-              <FormModal table="subject" type="delete" id={item.id} />
+              <FormModal table="lecturer" type="update" data={item} />
+              <FormModal table="student" type="delete" id={item.id} />
             </>
           )}
         </div>
@@ -62,7 +62,7 @@ const SubjectListPage = () => {
             <button className="w-8 h-8 flex items-center justify-center rounded-full bg-lamaYellow">
               <Image src="/sort.png" alt="" width={14} height={14} />
             </button>
-            {role === "admin" && <FormModal table="teacher" type="create" />}
+            {role === "admin" && <FormModal table="lecturer" type="create" />}
           </div>
         </div>
       </div>
